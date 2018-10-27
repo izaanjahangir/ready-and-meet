@@ -1,0 +1,133 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--theme-color-dark);
+    height: 70px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    z-index: 1000;
+}
+header *{
+    color: var(--font-color-light);
+}
+
+.app{
+    margin-top: 70px;
+    height: calc(100vh - 70px);
+}
+
+.login-container{
+    height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-background{
+    background-image: url("./assets/images/background.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.image-placeholder{
+     width: 150px; 
+     height: 200px;
+     border-radius: 8px;
+     background: #b2bec3;
+     position: relative;
+     background-position: center;
+     background-size: cover; 
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.text-placeholder{
+    color: rgba(0,0,0,0.3);
+    font-weight: bold
+}
+.custom-file-button{
+    box-sizing: border-box;
+    position: absolute;
+    bottom: -12px;
+    right: -5px;
+    background: var(--theme-color-light);
+    padding: 0 7px;
+    border-radius: 100px;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    transition: background 500ms ease-in-out;
+}
+
+.custom-file-button-cross{
+    box-sizing: border-box;
+    position: absolute;
+    bottom: -14px;
+    right: -5px;
+    background: var(--theme-red-light);
+    padding: 1px 10px;
+    border-radius: 100px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background 500ms ease-in-out;
+}
+
+.custom-file-button-cross:hover{
+    background: var(--theme-red-dark);
+}
+
+.custom-file-button:hover{
+    background: var(--theme-color-dark);
+}
+
+.meetup-placeholder{
+    width: 150px; 
+    height: 200px; 
+    background: white;
+    border: 2px solid var(--theme-color-dark) ;
+    display: flex;
+    transition: background 500ms ease-in-out;
+    cursor: pointer;
+}
+
+.meetup-placeholder:hover{
+    background: var(--theme-color-light);
+}
+
+.meetup-placeholder-selected{
+    background: var(--theme-color-light);
+}
+.bev-span{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.time-span{
+    color: var(--theme-color-light);
+    font-size: 2.2em;
+    font-weight: bold;
+}
+@media (max-width: 425px){
+    .image-placeholder{
+        width: 125px;
+        height: 175px;
+    }
+}
+
+@media (max-width: 320px){
+    .image-placeholder{
+        width: 100px;
+        height: 150px;
+    }
+}
